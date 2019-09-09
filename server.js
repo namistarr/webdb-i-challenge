@@ -6,4 +6,11 @@ const server = express();
 
 server.use(express.json());
 
+server.get('/', (req, res) => {
+    res.status(200).send('Welcome to the Hellmouth.')
+})
+
+
+
+
 module.exports = server;
